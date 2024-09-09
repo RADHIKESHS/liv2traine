@@ -63,7 +63,7 @@ To run this project locally, you need the following tools installed:
     mvn spring-boot:run
   ```
 ## API Endpoints
-### 4. Create a Training Center (POST /api/training-centers)**
+### 4. Create a Training Center (POST /api/training-centers)
 - Request Body Example:
   ```
     {
