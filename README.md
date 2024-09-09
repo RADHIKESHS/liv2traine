@@ -16,6 +16,15 @@ The project ensures proper validation, structured exception handling, and follow
 - Full validation of incoming data, including constraints on field length, formats, and required fields.
 - Structured exception handling with meaningful error responses.
 
+## Swagger UI
+
+- **Swagger UI :**
+  ```swagger-UI-endpoint
+  http://localhost:8080/swagger-ui/index.html#/
+  ```
+  ![Swagger UI](https://github.com/RADHIKESHS/liv2traine/blob/main/swagger-ui.png)
+
+
 ## Tech Stack
 
 - **Java 17**
