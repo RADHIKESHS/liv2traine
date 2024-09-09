@@ -40,8 +40,8 @@ To run this project locally, you need the following tools installed:
 ### 1. Clone the Repository
 
 ```bash
-  git clone https://github.com/your-username/liv2train-registry.git
-  cd liv2train-registry
+  git clone https://github.com/RADHIKESHS/liv2traine.git
+  cd liv2train
 ```
 ### 2. Configure the Database
 
