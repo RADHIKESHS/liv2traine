@@ -17,7 +17,7 @@ import com.senpiper.Liv2TrainRegistry.service.TrainingCenterService;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/api/training-centers")
+@RequestMapping("/api")
 public class TrainingCenterController {
 	
 	@Autowired
@@ -44,7 +44,7 @@ public class TrainingCenterController {
      * @return ResponseEntity containing the newly created TrainingCenter and HTTP status code.
      * @throws MethodArgumentNotValidException If validation fails.
      */
-    @PostMapping
+    @PostMapping("/getall-training-centers")
     public ResponseEntity<TrainingCenter> createTrainingCenter(@Valid @RequestBody TrainingCenter trainingCenter) {
         TrainingCenter createdCenter = trainingCenterService.createTrainingCenter(trainingCenter);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdCenter);
@@ -53,7 +53,7 @@ public class TrainingCenterController {
     /**
      * Retrieves a list of all training centers.
      */
-    @GetMapping
+    @GetMapping("/add-training-center")
     public ResponseEntity<List<TrainingCenter>> getAllTrainingCenters() {
         List<TrainingCenter> centers = trainingCenterService.getAllTrainingCenters();
         return ResponseEntity.ok(centers);
