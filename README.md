@@ -4,8 +4,8 @@
 
 **Liv2Train** is a registry for government-funded training centers. This MVP application is built using Spring Boot and MySQL. It supports two main APIs:
 
-- **POST /api/training-centers**: Create and save new training centers.
-- **GET /api/training-centers**: Retrieve the list of all stored training centers.
+- **POST /api/add-training-center**: Create and save new training centers.
+- **GET /api/getall-training-centers**: Retrieve the list of all stored training centers.
 
 The project ensures proper validation, structured exception handling, and follows best coding practices.
 
@@ -63,7 +63,7 @@ To run this project locally, you need the following tools installed:
     mvn spring-boot:run
   ```
 ## API Endpoints
-### 4. Create a Training Center (POST /api/training-centers)
+### 4. Create a Training Center (POST /api/add-training-center)
 - Request Body Example:
   ```
     {
@@ -99,7 +99,7 @@ To run this project locally, you need the following tools installed:
     "contactPhone": "1234567890"
   }
   ```
-### 5. Retrieve All Training Centers (GET /api/training-centers)
+### 5. Retrieve All Training Centers (GET /api/getall-training-centers)
 - Response Example:
 ```
   [
