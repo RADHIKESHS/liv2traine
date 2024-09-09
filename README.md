@@ -40,8 +40,8 @@ To run this project locally, you need the following tools installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/liv2train-registry.git
-cd liv2train-registry
+  git clone https://github.com/your-username/liv2train-registry.git
+  cd liv2train-registry
 ```
 ### 2. Configure the Database
 
@@ -56,9 +56,9 @@ cd liv2train-registry
   ```
 
 ### 3. Build and Run the Application
-  ```
-  mvn clean install
-  mvn spring-boot:run
+  ```bash
+    mvn clean install
+    mvn spring-boot:run
   ```
 ### API Endpoints
 ## Create a Training Center (POST /api/training-centers)
@@ -122,7 +122,7 @@ cd liv2train-registry
 ### 5. Error Handling
 ## Validation Error Responses
 - MethodArgumentNotValidException:
-When validation fails, the response will include a list of validation error messages, such as:
+- When validation fails, the response will include a list of validation error messages, such as:
 
 ```
   {
@@ -135,7 +135,7 @@ When validation fails, the response will include a list of validation error mess
 ```
 
 - ConstraintViolationException:
-When a constraint violation occurs, the response will include a list of error messages related to the constraint violations, such as:
+- When a constraint violation occurs, the response will include a list of error messages related to the constraint violations, such as:
 
 ```
   {
@@ -148,8 +148,21 @@ When a constraint violation occurs, the response will include a list of error me
 ```
 
 ### Contributing
--** Feel free to submit issues or pull requests. Please make sure your contributions adhere to the project's coding standards.
+## Feel free to submit issues or pull requests. Please make sure your contributions adhere to the project's coding standards.
 
-
+- 1. Fork the repository.
+  2. Create a new branch:
+     ```bash
+     git checkout -b feature-branch
+     ```
+  3. Commit your changes:
+    ```
+      git commit -m 'Add new feature'
+    ```
+  4. Push to the branch:
+    ```
+      git push origin feature-branch
+    ```
+  5. Open a pull request.
 
 
