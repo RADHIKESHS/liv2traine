@@ -46,9 +46,11 @@ To run this project locally, you need the following tools installed:
 ### 2. Configure the Database
 
 - **Create a MySQL Database:**
-
+  ```bash
+    CREATE DATABASE liv2train_db;
+  ```
+- Add this in Application.propertyfile
   ```sql
-  CREATE DATABASE liv2train_db;
   spring.datasource.url=jdbc:mysql://localhost:3306/liv2train_db
   spring.datasource.username=your_mysql_username
   spring.datasource.password=your_mysql_password
@@ -60,8 +62,8 @@ To run this project locally, you need the following tools installed:
     mvn clean install
     mvn spring-boot:run
   ```
-### API Endpoints
-## Create a Training Center (POST /api/training-centers)
+## API Endpoints
+### 4. Create a Training Center (POST /api/training-centers)**
 - Request Body Example:
   ```
     {
@@ -97,7 +99,7 @@ To run this project locally, you need the following tools installed:
     "contactPhone": "1234567890"
   }
   ```
-### 4. Retrieve All Training Centers (GET /api/training-centers)
+### 5. Retrieve All Training Centers (GET /api/training-centers)
 - Response Example:
 ```
   [
@@ -119,7 +121,7 @@ To run this project locally, you need the following tools installed:
   ]
 ```
 
-### 5. Error Handling
+### 6. Error Handling
 ## Validation Error Responses
 - MethodArgumentNotValidException:
 - When validation fails, the response will include a list of validation error messages, such as:
@@ -147,7 +149,7 @@ To run this project locally, you need the following tools installed:
   }
 ```
 
-### Contributing
+### 7. Contributing
 ## Feel free to submit issues or pull requests. Please make sure your contributions adhere to the project's coding standards.
 
 - 1. Fork the repository.
